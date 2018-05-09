@@ -1,0 +1,341 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+<meta charset="utf-8">
+<title>Acciones Beep y Vibrate</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app6.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js"></script><!-- necesario*/ -->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head> 
+<body onLoad="MM_preloadImages('imagenes/img2.jpg','imagenes/img4.jpg','imagenes/img6.jpg','imagenes/img8.jpg','imagenes/img10.jpg','imagenes/img12.jpg','imagenes/img14.jpg','imagenes/img16.jpg')"> 
+<div data-role="page" id="Principal" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    	<h1>BATALLA DEL 5 DE MAYO</h1>
+</div>
+    <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/img1.jpg" alt="img1" title="img1" id="wows1_0"/></li>
+		<li><img src="data1/images/img10.jpg" alt="img10" title="img10" id="wows1_1"/></li>
+		<li><img src="data1/images/img16.jpg" alt="img16" title="img16" id="wows1_2"/></li>
+		<li><img src="data1/images/img2.jpg" alt="img2" title="img2" id="wows1_3"/></li>
+		<li><img src="data1/images/img3.jpg" alt="img3" title="img3" id="wows1_4"/></li>
+		<li><img src="data1/images/img4.jpg" alt="img4" title="img4" id="wows1_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/img5.jpg" alt="javascript carousel" title="img5" id="wows1_6"/></a></li>
+		<li><img src="data1/images/img6.jpg" alt="img6" title="img6" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="img1"><span><img src="data1/tooltips/img1.jpg" alt="img1"/>1</span></a>
+		<a href="#" title="img10"><span><img src="data1/tooltips/img10.jpg" alt="img10"/>2</span></a>
+		<a href="#" title="img16"><span><img src="data1/tooltips/img16.jpg" alt="img16"/>3</span></a>
+		<a href="#" title="img2"><span><img src="data1/tooltips/img2.jpg" alt="img2"/>4</span></a>
+		<a href="#" title="img3"><span><img src="data1/tooltips/img3.jpg" alt="img3"/>5</span></a>
+		<a href="#" title="img4"><span><img src="data1/tooltips/img4.jpg" alt="img4"/>6</span></a>
+		<a href="#" title="img5"><span><img src="data1/tooltips/img5.jpg" alt="img5"/>7</span></a>
+		<a href="#" title="img6"><span><img src="data1/tooltips/img6.jpg" alt="img6"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">slider jquery</a> by WOWSlider.com v8.8</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    <div data-role="main" class="ui-content">
+    	<div data-role="collapsible" data-content-theme="false">
+    		<h4>5 de Mayo</h4>
+            <center>
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/img12.jpg',1)"><img src="imagenes/img11.jpg" width="75%" id="Image12"></a>
+            </center>
+  		</div>
+ 	</div>
+    
+    <div data-role="main" class="ui-content">
+    	<div data-role="collapsible" data-content-theme="false">
+    		<h4>Ubicación Batalla 4 de Mayo</h4>
+            <center>
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/img14.jpg',1)"><img src="imagenes/img13.png" width="75%" id="Image13"></a>
+            </center>
+  		</div>
+ 	</div>
+    
+    <div data-role="main" class="ui-content">
+    	<div data-role="collapsible" data-content-theme="false">
+    		<h4>Ubicación Batalla 5 de Mayo</h4>
+            <center>
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/img16.jpg',1)"><img src="imagenes/img15.jpg" width="75%" id="Image14"></a>
+            </center>
+  		</div>
+ 	</div>
+    
+<div data-role="main" class="ui-content" align="center">
+    	<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    	<li class="ui-first-child ui-last-child">
+        <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        Batalla 4 de Mayo
+        	</a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+        	<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        	Batalla 5 de Mayo
+        	</a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+        	<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        	Inicio del Conflicto
+        	</a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+        	<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        	Monumentos de la Batalla y/o Museos que Existen Sobre el Tema
+        	</a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+        	<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        	Héroes de la Batalla
+        	</a>
+        </li>
+        <br>
+     </ul>
+</div>
+    
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<br>
+    	<img src="res/android/mdpi.png" width="46px" height="46px"><br>
+    	App 5 Batalla 5 de Mayo
+        Brian Hernández Ramírez<br>
+        
+        <br>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    	<h1>Batalla 4 de Mayo</h1>
+     </div>
+     	<div data-role="content" align="center">
+     		<div align="justify">
+            La Batalla de Atlixco tuvo lugar el 4 de mayo de 1862 en las inmediaciones de la Hacienda de las Traperas en Atlixco en el estado de Puebla, México, entre elementos del ejército mexicano de la república, al mando de los generales Antonio Carvajal y Tomás O'Horan contra las tropas al servicio del Segundo Imperio Mexicano comandadas por el general José María Cobos y de Leonardo Márquez, compuesta de soldados conservadores mexicanos en apoyo de envío de refuerzos para llevar a cabo la Batalla de Puebla, durante la Segunda Intervención Francesa en México.
+            <br>
+            <br>
+             <center>
+               <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/img2.jpg',1)"><img src="imagenes/img1.jpg" width="75%" id="Image7"></a>
+             </center> <br>
+                <br>
+ 		</div a>
+        <div data-role="main" class="ui-content" align="center">
+    	<div>
+        	<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            	<li class="ui-first-child ui-last-child">
+                	<a href="https://es.wikipedia.org/wiki" target="_self" data-role="button" id="enlace1">
+                    	Más información
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div a>
+	<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    	<div>
+        <br>
+        	<img src="imagenes/mdpi.png" width="46" height="46">
+            <div>
+ 			App Batalla de Puebla, BHR<br>
+            <br>
+            </div>
+            </div>
+        
+       </div>
+   </div>  
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    	<h1>Batalla 5 de Mayo</h1>
+     </div>
+     	<div data-role="content" align="center">
+     		<div align="justify">
+            La batalla de Puebla fue un combate librado el 5 de mayo de 1862 en las cercanías de la ciudad de Puebla, entre los ejércitos de la República Mexicana, bajo el mando de Ignacio Zaragoza, y del Segundo Imperio francés, dirigido por Charles Ferdinand Latrille, conde de Lorencez, durante la Segunda Intervención Francesa en México, cuyo resultado fue una victoria importante para los mexicanos ya que con unas fuerzas consideradas como inferiores lograron vencer a uno de los ejércitos más experimentados y respetados de su época. Pese a su éxito, la batalla no impidió la invasión del país, aunque sí que sería la primera batalla de una guerra que finalmente México ganaría.
+             <center> 
+               <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/img4.jpg',1)"><img src="imagenes/img3.jpg" width="75%" id="Image8"></a>
+             </center> <br>
+                <br>
+ 		</div>
+         <div data-role="main" class="ui-content" align="center">
+    	<div>
+        	<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            	<li class="ui-first-child ui-last-child">
+                	<a href="https://es.wikipedia.org/wiki" target="_self" data-role="button" id="enlace2">
+                    	Más información
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    	<div>
+        <br>
+        	<img src="imagenes/mdpi.png" width="46" height="46">
+            <div>
+ 			App Batalla de Puebla, BHR<br>
+            <br>
+            </div>
+            </div>
+        
+       </div>
+   </div> 
+   
+   <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    	<h1>Inicio del Conflicto</h1>
+     </div>
+     	<div data-role="content" align="center">
+     		<div align="justify">
+            Después de que el Presidente Benito Juárez anunciara que no pagaría la deuda externa, en octubre de 1861, Francia, Inglaterra y España suscribieron la Convención de Londres, en la cual se comprometieron a enviar contingentes militares a México para reclamar sus derechos como acreedores por una deuda que ascendía a alrededor de 80 millones de pesos, de los que aproximadamente 69 millones corresponderían a Inglaterra, 9 millones a España y 2 millones a Francia.
+            Poco después de reunirse, los representantes de los tres países enviaron un ultimátum al gobierno mexicano en el que pedían el pago de sus deudas; de lo contrario, invadiría el país. Juárez, quien gobernaba a un país que apenas empezaba a levantarse de la postración económica, respondió con un exhorto a lograr un arreglo amistoso, y los invitó a una conferencia.
+             <center> 
+               <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/img6.jpg',1)"><img src="imagenes/img5.jpg" width="75%" id="Image9"></a>
+             </center> <br>
+                <br>
+ 		</div>
+         <div data-role="main" class="ui-content" align="center">
+    	<div>
+        	<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            	<li class="ui-first-child ui-last-child">
+                	<a href="https://es.wikipedia.org/wiki" target="_self" data-role="button" id="enlace3">
+                    	Más información
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    	<div>
+        <br>
+        	<img src="imagenes/mdpi.png" width="46" height="46">
+            <div>
+ 			App Batalla de Puebla, BHR<br>
+            <br>
+            </div>
+            </div>
+        
+       </div>
+   </div> 
+   
+   <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    	<h1>Monumentos de la Batalla y/o Museos que Existen Sobre el Tema</h1>
+     </div>
+     	<div data-role="content" align="center">
+     		<div align="justify">
+            Museo Interactivo de la Batalla del 5 de Mayo<br>
+            Puebla fue un punto clave para la historia del país, por lo que este museo interactivo revive de forma didáctica la batalla del 5 de Mayo de 1862 en la zona de Los Fuertes, el mismo escenario donde se desarrollaron estos hechos.
+
+El interactivo narra las acciones militares y contiene las biografías de héroes nacionales como Ignacio Zaragoza, a través de pantallas táctiles, proyecciones en 3-D y contenidos interactivos descargables en dispositivos.
+
+Este espacio está dotado de tres salas que detallan la riqueza histórica de Puebla, que te transportan a los lugares donde la batalla se llevó a cabo.<br>
+<center>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/img8.jpg',1)"><img src="imagenes/img7.jpg" width="75%" id="Image10"></a>
+</center>
+ <br>
+                <br>
+ 		</div>
+         <div data-role="main" class="ui-content" align="center">
+    	<div>
+        	<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            	<li class="ui-first-child ui-last-child">
+                	<a href="http://puebla.travel/es" target="_self" data-role="button" id="enlace4">
+                    	Más información
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    	<div>
+        <br>
+        	<img src="imagenes/mdpi.png" width="46" height="46">
+            <div>
+ 			App Batalla de Puebla, BHR<br>
+            <br>
+            </div>
+            </div>
+        
+       </div>
+   </div> 
+   
+   <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    	<h1>Héroes de la Batalla</h1>
+     </div>
+     	<div data-role="content" align="center">
+     		<div align="justify">
+           Ignacio Zaragoza<br>
+           Ignacio Zaragoza Seguin (24 de marzo de 1829 - 8 de septiembre de 1862) fue un militar mexicano reconocido como el héroe de la Batalla de Puebla, que tuvo lugar el 5 de mayo de 1862, cuando el ejército mexicano derrotó al ejército francés de élite al mando de Charles Ferdinand Latrille (Conde de Lorencez), considerado en su momento el mejor del mundo.<br>
+           Porfirio Díaz<br>
+           José de la Cruz Porfirio Díaz Mori1​, conocido como Porfirio Díaz (Oaxaca de Juárez, Oaxaca, 15 de septiembre de 1830 - París, Francia, 2 de julio de 1915), fue un militar mexicano que ejerció el cargo de presidente de México en siete ocasiones. En total ocupó la presidencia de México por 30 años, una extensión sin antecedentes.<br>
+             <center>
+               <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/img10.jpg',1)"><img src="imagenes/img9.jpg" width="75%" id="Image11"></a>
+             </center> <br>
+                <br>
+ 		</div>
+        <div data-role="main" class="ui-content" align="center">
+    	<div>
+        	<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            	<li class="ui-first-child ui-last-child">
+                	<a href="http://www.saberia.com/quienes-lucharon-en-la-batalla-del-5-de-mayo" target="_self" data-role="button" id="enlace5">
+                    	Más información
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    	<div>
+        <br>
+        	<img src="imagenes/mdpi.png" width="46" height="46">
+            <div>
+ 			App Batalla de Puebla, BHR<br>
+            <br>
+            </div>
+            </div>
+        
+       </div>
+   </div> 
+</body>
+</html>
